@@ -1,0 +1,3 @@
+[submodule "Springboot-SpringBatch-Angular"]
+	path = Springboot-SpringBatch-Angular
+	url = https://github.com/NDE18/Springboot-SpringBatch-Angular

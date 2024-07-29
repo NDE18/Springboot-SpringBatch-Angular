@@ -1,0 +1,27 @@
+<div class="list row">
+    <div class="col-md-12">
+      <h4>User List</h4>
+        <table class="table table-bordered responstable table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Birth</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let obj of users">
+                    <td>{{obj.id}}</td>
+                    <td>{{obj.firstName}}</td>
+                    <td>{{obj.lastName}}</td>
+                    <td>{{obj.birth}}</td>
+                    <td>{{obj.email}}</td>
+                    <td>{{obj.phone}}</td>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+</div>

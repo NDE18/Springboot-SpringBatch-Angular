@@ -1,0 +1,66 @@
+<div>
+    <div class="submit-form">
+      @if (!submitted) {
+      <div class="form-group">
+        <label for="firstname">Firstname</label>
+        <input
+          type="text"
+          class="form-control"
+          id="firstname"
+          required
+          [(ngModel)]="user.firstName"
+          name="firstname"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="lastname">Lastname</label>
+        <input
+          class="form-control"
+          id="lastname"
+          required
+          [(ngModel)]="user.lastName"
+          name="lastname"
+        />
+      </div>
+      <div class="form-group">
+        <label for="birth">Birth</label>
+        <input
+          type="text"
+          class="form-control"
+          id="birth"
+          required
+          [(ngModel)]="user.birth"
+          name="birth"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          class="form-control"
+          id="email"
+          required
+          [(ngModel)]="user.email"
+          name="email"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input
+          class="form-control"
+          id="phone"
+          required
+          [(ngModel)]="user.phone"
+          name="phone"
+        />
+      </div>
+
+      <button (click)="saveUser()" class="btn btn-success">Submit</button>
+      } @else {
+      <h4>User was submitted successfully!</h4>
+      <button class="btn btn-success" (click)="newUser()">Add</button>
+      }
+    </div>
+  </div>
